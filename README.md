@@ -38,28 +38,28 @@ All commands were executed using the MongoDB shell (`mongosh`) with a local Mong
 ![mongosh Start](screenshots/ss_1.png)
 
 ### 📂 Using `ecomDB` database
-![Use ecomDB](screenshots/ss_2.png)
+![Use ecomDB](Screenshots/ss_2.png)
 
 ### 📁 Creating `products` collection
-![Create Collection](screenshots/ss_3.png)
+![Create Collection](Screenshots/ss_3.png)
 
 ### 📝 Inserting documents
-![Insert Docs](screenshots/ss_4.png)
+![Insert Docs](Screenshots/ss_4.png)
 
 ### 🔍 Finding documents
-![Find Docs](screenshots/ss_5.png)
+![Find Docs](Screenshots/ss_5.png)
 
 ### ✏️ Updating data
-![Update Docs](screenshots/ss_6.png)
+![Update Docs](Screenshots/ss_6.png)
 
 ### 🗑️ Deleting data
-![Delete Docs](screenshots/ss_7.png)
+![Delete Docs](Screenshots/ss_7.png)
 
 ### 🚮 Dropping collection
-![Drop Collection](screenshots/ss_8.png)
+![Drop Collection](Screenshots/ss_8.png)
 
 ### ✅ Final check
-![Final Check](screenshots/ss_9.png)
+![Final Check](Screenshots/ss_9.png)
 
 
 ## 📁 File Included
