@@ -35,7 +35,7 @@ All commands were executed using the MongoDB shell (`mongosh`) with a local Mong
 ## 📸 Screenshots
 
 ### 🟢 Starting mongosh shell
-![mongosh Start](screenshots/ss_1.png)
+![mongosh Start](Screenshots/ss_1.png)
 
 ### 📂 Using `ecomDB` database
 ![Use ecomDB](Screenshots/ss_2.png)
