@@ -1,0 +1,131 @@
+Microsoft Windows [Version 10.0.26100.4061]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Karthiga>mongosh
+Current Mongosh Log ID: 68866a336ea9333c12eec4a8
+Connecting to:          mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.5.6
+Using MongoDB:          8.0.11
+Using Mongosh:          2.5.6
+
+For mongosh info see: https://www.mongodb.com/docs/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2025-07-22T12:53:53.955+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+test> use ecomDB  
+
+Explanation: Switches the current database context to `ecomDB`. If it doesn't exist, it will be created when you insert data.
+
+ecomDB> db.createCollection("products")  
+Explanation: Creates a new collection called `products` inside the `ecomDB` database.
+
+ecomDB> db.products.insertOne({
+  name: "Wireless Mouse",
+  price: 499,
+  category: "Electronics",
+  stock: 120,
+  brand: "LogiTech",
+  rating: 4.3
+})  
+
+Explanation: Inserts one document (product) into the `products` collection.
+
+ecomDB> db.products.insertMany([
+  { name: "Gaming Keyboard", price: 999, category: "Electronics", stock: 70, brand: "HP", rating: 4.0 },
+  { name: "Water Bottle", price: 199, category: "Home & Kitchen", stock: 150, brand: "Milton", rating: 4.2 },
+  { name: "Notebook", price: 40, category: "Stationery", stock: 300, brand: "Classmate", rating: 4.5 }
+])  
+
+Explanation: Inserts multiple documents into the `products` collection at once.
+
+ecomDB> db.products.find()  
+Explanation: Displays all documents from the `products` collection.
+
+ecomDB> db.products.find({ category: "Electronics" })  
+Explanation: Finds and shows all products that belong to the "Electronics" category.
+
+ecomDB> db.products.updateOne(
+  { name: "Gaming Keyboard" },
+  { $set: { stock: 100 } }
+)  
+
+Explanation: Updates the stock of the product "Gaming Keyboard" to 100.
+
+ecomDB> db.products.deleteOne({ name: "Notebook" })  
+
+Explanation: Deletes one document from the `products` collection where the name is "Notebook".
+
+ecomDB> db.products.find({ price: { $gt: 100 } })  
+
+Explanation: Finds all products where the price is greater than 100.
+
+ecomDB> db.products.find({ stock: { $lt: 200 } })  
+
+Explanation: Finds all products where the stock is less than 200.
+
+ecomDB> db.products.find({ brand: { $in: ["LogiTech", "HP"] } })  
+
+Explanation: Finds all products whose brand is either "LogiTech" or "HP".
+
+ecomDB> db.products.find({ $and: [{ category: "Electronics" }, { price: { $lt: 800 } }] })  
+
+Explanation: Finds all products in the "Electronics" category with price less than 800 using `$and`.
+
+ecomDB> db.products.find({ $or: [{ stock: { $gt: 100 } }, { rating: { $gt: 4.0 } }] })  
+
+Explanation: Finds all products with stock > 100 or rating > 4.0 using `$or`.
+
+ecomDB> db.products.find({ discount: { $exists: false } })  
+
+Explanation: Finds products that do not have the field `discount` (i.e., field is missing).
+
+ecomDB> db.products.deleteMany({})  
+
+Explanation: Deletes all documents from the `products` collection (clears the collection).
+
+ecomDB> db.products.find()  
+
+Explanation: Verifies that the `products` collection is now empty after the deletion.
+
+ecomDB> db.products.insertMany([
+...   { name: "USB Cable", price: 150, category: "Electronics", stock: 300 },
+...   { name: "Wireless Mouse", price: 500, category: "Electronics", stock: 120 },
+...   { name: "Earphones", price: 250, category: "Electronics", stock: 100 }
+... ])
+...
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId('6886728a6ea9333c12eec4ad'),
+    '1': ObjectId('6886728a6ea9333c12eec4ae'),
+    '2': ObjectId('6886728a6ea9333c12eec4af')
+  }
+}
+
+Explanation: Inserts three new documents into the products collection. Each document represents an electronic item with name, price, category, and stock details.
+
+ecomDB> db.products.updateMany(
+...   { category: "Electronics" },
+...   { $set: { featured: true } }
+... )
+...
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 3,
+  modifiedCount: 3,
+  upsertedCount: 0
+}
+
+Explanation: Updates all products in the "Electronics" category by adding a new field featured with the value true.
+
+ecomDB> db.products.drop()
+true
+
+Explanation: Deletes the entire products collection.
+
+ecomDB> db.products.find()
+
+Explanation: Shows all items in products (returns nothing if collection is deleted).
