@@ -35,15 +35,16 @@ Below are the screenshots taken during practice:
 
 | Screenshot | Description |
 |------------|-------------|
-| ![ss_1](ss_1.png) | Starting `mongosh` shell |
-| ![ss_2](ss_2.png) | Using `ecomDB` database |
-| ![ss_3](ss_3.png) | Creating `products` collection |
-| ![ss_4](ss_4.png) | Inserting documents |
-| ![ss_5](ss_5.png) | Finding documents |
-| ![ss_6](ss_6.png) | Updating data |
-| ![ss_7](ss_7.png) | Deleting data |
-| ![ss_8](ss_8.png) | Dropping collection |
-| ![ss_9](ss_9.png) | Final check |
+| ![ss_1](screenshots/ss_1.png) | Starting `mongosh` shell |
+| ![ss_2](screenshots/ss_2.png) | Using `ecomDB` database |
+| ![ss_3](screenshots/ss_3.png) | Creating `products` collection |
+| ![ss_4](screenshots/ss_4.png) | Inserting documents |
+| ![ss_5](screenshots/ss_5.png) | Finding documents |
+| ![ss_6](screenshots/ss_6.png) | Updating data |
+| ![ss_7](screenshots/ss_7.png) | Deleting data |
+| ![ss_8](screenshots/ss_8.png) | Dropping collection |
+| ![ss_9](screenshots/ss_9.png) | Final check |
+
 
 ## 📁 File Included
 
