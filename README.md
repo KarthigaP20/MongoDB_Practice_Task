@@ -11,14 +11,12 @@ This project contains basic MongoDB commands and operations used for practicing 
 
 All commands were executed using the MongoDB shell (`mongosh`) with a local MongoDB setup.
 
----
 
 ## 🗂️ Database Used
 
 - **Database Name**: `ecomDB`
 - **Collection Name**: `products`
 
----
 
 ## 🧪 Basic Commands Practiced
 
@@ -33,29 +31,42 @@ All commands were executed using the MongoDB shell (`mongosh`) with a local Mong
 - `db.products.deleteMany(...)` – Delete multiple documents  
 - `db.products.drop()` – Drop the entire collection  
 
----
 
 ## 📸 Screenshots
 
-Screenshots taken during the practice session:
+### 🟢 Starting mongosh shell
+![mongosh Start](screenshots/ss_1.png)
 
-- ![Starting mongosh shell](screenshots/ss_1.png)
-- ![Using ecomDB database](screenshots/ss_2.png)
-- ![Creating products collection](screenshots/ss_3.png)
-- ![Inserting documents](screenshots/ss_4.png)
-- ![Finding documents](screenshots/ss_5.png)
-- ![Updating data](screenshots/ss_6.png)
-- ![Deleting data](screenshots/ss_7.png)
-- ![Dropping collection](screenshots/ss_8.png)
-- ![Final check](screenshots/ss_9.png)
+### 📂 Using `ecomDB` database
+![Use ecomDB](screenshots/ss_2.png)
 
----
+### 📁 Creating `products` collection
+![Create Collection](screenshots/ss_3.png)
+
+### 📝 Inserting documents
+![Insert Docs](screenshots/ss_4.png)
+
+### 🔍 Finding documents
+![Find Docs](screenshots/ss_5.png)
+
+### ✏️ Updating data
+![Update Docs](screenshots/ss_6.png)
+
+### 🗑️ Deleting data
+![Delete Docs](screenshots/ss_7.png)
+
+### 🚮 Dropping collection
+![Drop Collection](screenshots/ss_8.png)
+
+### ✅ Final check
+![Final Check](screenshots/ss_9.png)
+
 
 ## 📁 File Included
 
 - `MongoDB_Practice_Task.txt` – Contains all commands used with simple explanations.
 
----
+
 
 ## ✅ Status
 
